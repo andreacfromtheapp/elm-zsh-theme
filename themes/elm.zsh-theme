@@ -52,7 +52,10 @@ local git_super_status='$(git_super_status)'
 # Branch Info
 local branch_info='%{$GREEN%}$(git_prompt_info) $(git_prompt_short_sha) $(git_prompt_status)%{$RESET_COLOR%}'
 
+# Time and Date
+local time_and_date='%{$GREEN%}[%D{%Y-%m-%d %L:%M:%S %p}]'; TMOUT=1; TRAPALRM(); { zle reset-prompt }
+
 # Prompt format
 PROMPT="${lead_char} ${user_host} ${separator} ${user_path} ${git_super_status} ${branch_info}
 ${user_symbol} "
-RPROMPT=""
+RPROMPT="${time_and_date}"
