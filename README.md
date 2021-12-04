@@ -2,6 +2,23 @@
 
 a simple zsh theme with some useful ```git``` information, and date and clock to the right.
 
+![Elm Zsh Theme](./elm%20theme.png)
+
+## FEATURES
+
+PROMPT:
+
+- leading character
+- user @ hostname
+- separator character
+- path: 1up/current dir
+- git_super_status
+- branch_info
+
+RPROMPT:
+
+- date and clock
+
 ## USAGE
 
 - Create the custom themes directory if needed:
