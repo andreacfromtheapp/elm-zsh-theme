@@ -49,14 +49,14 @@ Suppose you don't really fancy the date and clock on the right, just empty ```RP
 RPROMPT=""
 ```
 
-Don't like to be reminded about how functional programming is great, everyday? Change the leading character from **λ** to whatever you fancy:
+Or that you don't care about [why functional programming matters](https://www.youtube.com/watch?v=IyR04U66z7E), just change the leading ```λ``` to whatever you fancy:
 
 ```text
 # Leading Character
 local lead_char='%{$WHITE_BOLD%}λ%{$RESET_COLOR%}'
 ```
 
-Same for the separator **::** character:
+Same for the separator ```::``` character:
 
 ```text
 # Separator Char
