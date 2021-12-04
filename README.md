@@ -21,13 +21,7 @@ RPROMPT:
 
 ## USAGE
 
-- Create the custom themes directory if needed:
-
-```bash
-mkdir -p $ZSH_CUSTOM/themes
-```
-
-- Download the theme into oh-my-zsh's custom themes directory:
+- Download the theme into OhMyZsh custom themes directory:
 
 ```bash
 curl -sLJ https://raw.githubusercontent.com/gacallea/elm-zsh-theme/master/themes/elm.zsh-theme -o $ZSH_CUSTOM/themes/elm.zsh-theme
@@ -38,6 +32,12 @@ curl -sLJ https://raw.githubusercontent.com/gacallea/elm-zsh-theme/master/themes
 ```text
 ZSH_THEME="elm"
 ```
+
+### YOU MAY NEED
+
+- To install and use [OhMyZsh](https://ohmyz.sh/).
+- To enable the ```git-prompt``` plugin.
+- To install and use [Fira Code](https://github.com/tonsky/FiraCode).
 
 ## CUSTOMIZATION
 
