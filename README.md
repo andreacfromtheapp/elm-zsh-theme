@@ -2,7 +2,7 @@
 
 a simple zsh theme with some useful ```git``` information, and date and clock to the right.
 
-![Elm Zsh Theme](./elm%20theme.png)
+![Elm Zsh Theme](elm.zsh-theme.png)
 
 ## FEATURES
 
