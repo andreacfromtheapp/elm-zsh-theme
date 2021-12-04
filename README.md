@@ -1,6 +1,6 @@
-# Elm zsh Theme
+# Elm Zsh Theme
 
-a simple zsh theme with some useful ```git``` information, and date and clock to the right.
+```Elm``` is a simple Zsh theme that I fancy and that I've created for personal use. Its name (which is a tribute to [Elm Lang](https://elm-lang.org)), and the leading λ and separator :: characters, are an expression of my love for functional programming.
 
 ![Elm Zsh Theme](elm.zsh-theme.png)
 
