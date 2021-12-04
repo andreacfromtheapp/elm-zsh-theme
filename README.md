@@ -2,7 +2,7 @@
 
 a simple zsh theme with some useful ```git``` information, and date and clock to the right.
 
-## Usage
+## USAGE
 
 - Create the custom themes directory if needed:
 
@@ -22,7 +22,7 @@ curl -sLJ https://raw.githubusercontent.com/gacallea/elm-zsh-theme/master/themes
 ZSH_THEME="elm"
 ```
 
-## Customization
+## CUSTOMIZATION
 
 This theme is easy to modify and customize.
 
@@ -46,6 +46,6 @@ Same for the separator **::** character:
 local separator='%{$WHITE%}::%{$RESET_COLOR%}'
 ```
 
-## License
+## LICENSE
 
-This theme is licensed under the terms of the [GPLv3](https://www.gnu.org/licenses/gpl-3.0.en.html) or later license. A copy of the GPLv3 is included here: [LICENSE](LICENSE)
+This theme is licensed under the terms of the [GPLv3](https://www.gnu.org/licenses/gpl-3.0.en.html) or later license. A copy of the GPLv3 is included [here](LICENSE).
