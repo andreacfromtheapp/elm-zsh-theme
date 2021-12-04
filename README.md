@@ -24,7 +24,7 @@ RPROMPT:
 - Download the theme into OhMyZsh custom themes directory:
 
 ```bash
-curl -sLJ https://raw.githubusercontent.com/gacallea/elm-zsh-theme/master/themes/elm.zsh-theme -o $ZSH_CUSTOM/themes/elm.zsh-theme
+curl -sLJ https://raw.githubusercontent.com/gacallea/elm-zsh-theme/master/elm.zsh-theme -o $ZSH_CUSTOM/themes/elm.zsh-theme
 ```
 
 - Set ```elm``` as your theme in ```~/.zshrc```:
