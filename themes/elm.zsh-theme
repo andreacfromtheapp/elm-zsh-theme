@@ -3,11 +3,13 @@ RED=$fg[red]
 YELLOW=$fg[yellow]
 GREEN=$fg[green]
 WHITE=$fg[white]
+BLACK=$fg[black]
 BLUE=$fg[blue]
 RED_BOLD=$fg_bold[red]
 YELLOW_BOLD=$fg_bold[yellow]
 GREEN_BOLD=$fg_bold[green]
 WHITE_BOLD=$fg_bold[white]
+BLACK_BOLD=$fg_bold[black]
 BLUE_BOLD=$fg_bold[blue]
 RESET_COLOR=$reset_color
 
@@ -30,10 +32,16 @@ ZSH_THEME_GIT_PROMPT_SHA_BEFORE="%{$WHITE%}[%{$YELLOW%}"
 ZSH_THEME_GIT_PROMPT_SHA_AFTER="%{$WHITE%}]"
 
 # Leading Character
-local lead_char='%{$WHITE_BOLD%}λ%{$RESET_COLOR%}'
+local lead_char_white='%{$WHITE_BOLD%}λ%{$RESET_COLOR%}'
+local lead_char_black='%{$BLACK%}λ%{$RESET_COLOR%}'
 
 # Separator Char
-local separator='%{$WHITE%}::%{$RESET_COLOR%}'
+local separator_white='%{$WHITE_BOLD%}::%{$RESET_COLOR%}'
+local separator_black='%{$BLACK%}::%{$RESET_COLOR%}'
+
+# User Symbol
+local user_symbol_white='%{$WHITE_BOLD%}|>%{$RESET_COLOR%}'
+local user_symbol_black='%{$BLACK%}|>%{$RESET_COLOR%}'
 
 # Format root vs non-root user
 if [[ $UID -eq 0 ]]; then
@@ -43,7 +51,6 @@ if [[ $UID -eq 0 ]]; then
 else
     local user_host='%{$GREEN%}%n@%m%{$RESET_COLOR%}'
     local user_path='%{$BLUE%}%2~%{$RESET_COLOR%}'
-    local user_symbol='%{$WHITE_BOLD%}|>%{$RESET_COLOR%}'
 fi
 
 # Git Super Status
@@ -56,6 +63,14 @@ local branch_info='%{$GREEN%}$(git_prompt_info) $(git_prompt_short_sha) $(git_pr
 local time_and_date='%{$GREEN%}[%D{%Y-%m-%d %L:%M:%S %p}]'; TMOUT=1; TRAPALRM(); { zle reset-prompt }
 
 # Prompt format
-PROMPT="${lead_char} ${user_host} ${separator} ${user_path} ${git_super_status} ${branch_info}
-${user_symbol} "
-RPROMPT="${time_and_date}"
+
+## use this on dark terminals
+# PROMPT="${lead_char_white} ${user_host} ${separator_white} ${user_path} ${git_super_status} ${branch_info}
+# ${user_symbol_white} "
+## use this on light terminals
+PROMPT="${lead_char_black} ${user_host} ${separator_black} ${user_path} ${git_super_status} ${branch_info}
+${user_symbol_black} "
+# time and date
+# RPROMPT="${time_and_date}"
+# nothing
+RPROMPT=""
