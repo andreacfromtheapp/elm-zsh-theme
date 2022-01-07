@@ -21,16 +21,31 @@ RPROMPT:
 
 ## USAGE
 
-- Download the theme into OhMyZsh custom themes directory:
+### Download the theme's files
+
+These ```cURL``` commands will download the theme files in the right directory:
 
 ```bash
-curl -sLJ https://raw.githubusercontent.com/gacallea/elm-zsh-theme/main/themes/elm.zsh-theme -o $ZSH_CUSTOM/themes/elm.zsh-theme
+curl -sLJ https://raw.githubusercontent.com/gacallea/elm-zsh-theme/main/themes/elm-light.zsh-theme -o $ZSH_CUSTOM/themes/elm-light.zsh-theme
 ```
 
-- Set ```elm``` as your theme in ```~/.zshrc```:
+```bash
+curl -sLJ https://raw.githubusercontent.com/gacallea/elm-zsh-theme/main/themes/elm-dark.zsh-theme -o $ZSH_CUSTOM/themes/elm-dark.zsh-theme
+```
+
+### Choose a variant
+
+This theme comes with two variants:
+
+- [elm dark](./themes/elm-dark.zsh-theme): suitable for dark backgrounds
+- [elm light](./themes/elm-light.zsh-theme): suitable for light backgrounds
+
+### Set Your Theme
+
+Suppose you have chosen ```elm-light``` as your theme, set it in ```~/.zshrc``` like so:
 
 ```text
-ZSH_THEME="elm"
+ZSH_THEME="elm-light"
 ```
 
 ### YOU MAY NEED
