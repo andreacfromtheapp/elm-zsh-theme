@@ -32,16 +32,13 @@ ZSH_THEME_GIT_PROMPT_SHA_BEFORE="%{$WHITE%}[%{$YELLOW%}"
 ZSH_THEME_GIT_PROMPT_SHA_AFTER="%{$WHITE%}]"
 
 # Leading Character
-local lead_char_white='%{$WHITE_BOLD%}λ%{$RESET_COLOR%}'
-local lead_char_black='%{$BLACK%}λ%{$RESET_COLOR%}'
+local lead_char='%{$BLACK%}λ%{$RESET_COLOR%}'
 
 # Separator Char
-local separator_white='%{$WHITE_BOLD%}::%{$RESET_COLOR%}'
-local separator_black='%{$BLACK%}::%{$RESET_COLOR%}'
+local separator='%{$BLACK%}::%{$RESET_COLOR%}'
 
 # User Symbol
-local user_symbol_white='%{$WHITE_BOLD%}|>%{$RESET_COLOR%}'
-local user_symbol_black='%{$BLACK%}|>%{$RESET_COLOR%}'
+local user_symbol='%{$BLACK%}|>%{$RESET_COLOR%}'
 
 # Format root vs non-root user
 if [[ $UID -eq 0 ]]; then
@@ -63,13 +60,8 @@ local branch_info='%{$GREEN%}$(git_prompt_info) $(git_prompt_short_sha) $(git_pr
 local time_and_date='%{$GREEN%}[%D{%Y-%m-%d %L:%M:%S %p}]'; TMOUT=1; TRAPALRM(); { zle reset-prompt }
 
 # Prompt format
-
-## use this on dark terminals
-# PROMPT="${lead_char_white} ${user_host} ${separator_white} ${user_path} ${git_super_status} ${branch_info}
-# ${user_symbol_white} "
-## use this on light terminals
-PROMPT="${lead_char_black} ${user_host} ${separator_black} ${user_path} ${git_super_status} ${branch_info}
-${user_symbol_black} "
+PROMPT="${lead_char} ${user_host} ${separator} ${user_path} ${git_super_status} ${branch_info}
+${user_symbol} "
 # time and date
 # RPROMPT="${time_and_date}"
 # nothing
