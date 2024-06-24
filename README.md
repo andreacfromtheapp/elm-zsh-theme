@@ -4,6 +4,10 @@
 
 ![Elm Zsh Theme](elm.zsh-theme.png)
 
+## Archiving Update
+
+As I have switched to using the Fish Shell, I am archiving this repo. Hoever, the code is stable and still works fine. It only means i won't be updating it any longer.
+
 ## FEATURES
 
 PROMPT:
